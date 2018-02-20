@@ -11,6 +11,7 @@
     <title>Tacos Don Toño y Servicios</title>
 
     <!-- Bootstrap core CSS -->
+    <link rel="shortcut icon" href="img/conejo.jpg"/>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
@@ -49,7 +50,7 @@
               <a class="nav-link js-scroll-trigger" href="#portfolio">Paquetes y Eventos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Historia</a>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team">Team</a>
@@ -68,7 +69,7 @@
         <div class="intro-text">
           <div class="intro-lead-in">Bienvenido a la mejor taqueria de México!</div>
           <div class="intro-heading text-uppercase">Un Placer para tu Paladar</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Conocenos</a>
+          <a class="btn btn-dark btn-xl text-uppercase js-scroll-trigger" href="#services">Conocenos</a>
         </div>
       </div>
     </header>
@@ -86,7 +87,7 @@
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-danger"></i>
-              <i class="fa fa-minus-square fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-cutlery fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Banquetes</h4>
             <!-- <p class="titulos">Contamos con Parrillada, Taquizas, etc.</p> -->
@@ -412,12 +413,25 @@
 
 
     <!-- MAP -->
-    <section  id=""  class="map">
-      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+    <section  id="map"  class="map">
+      <section  id="map"  class="map">
+      </section>
+      <script>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 19.318035535767475, lng:-99.06321274265082},
+            zoom: 19
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?AIzaSyDPlyypLVMyjenb0WDIv8SImfsvcWuFkjA&callback=initMap"
+      async defer></script>
+      <!-- <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
       <br/>
       <small>
         <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-      </small>
+      </small> -->
     </section>
 
 
